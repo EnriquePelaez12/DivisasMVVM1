@@ -5,7 +5,7 @@
              x:Class="DivisasMVVM1.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
+        <!-- Place new controls here kike 111 -->
     	<Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
