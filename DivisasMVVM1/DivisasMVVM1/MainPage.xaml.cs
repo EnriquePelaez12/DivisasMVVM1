@@ -9,7 +9,7 @@ namespace DivisasMVVM1
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+		public MainPage(Xamarin.Forms.Page mainPage)
 		{
 			InitializeComponent();
 		}

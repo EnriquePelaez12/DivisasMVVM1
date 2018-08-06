@@ -1,17 +1,18 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using DivisasMVVM1.Page;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace DivisasMVVM1
 {
 	public partial class App : Application
 	{
-		public App ()
-		{
-			InitializeComponent();
+        public App()
+        {
+            InitializeComponent();
 
-			MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPageView());
 		}
 
 		protected override void OnStart ()

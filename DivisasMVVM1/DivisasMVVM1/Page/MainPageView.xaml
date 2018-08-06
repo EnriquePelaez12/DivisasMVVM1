@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DivisasMVVM1.Page.MainPageView"
+             Title="Divisas"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="8">
+            <Label 
+                FontSize="Medium"
+                TextColor="Black"
+                Text="Pesos"
+                >
+            </Label>
+            <Entry
+                Text="{Binding Pesos, Mode=TwoWay}"
+                Keyboard="Numeric"
+                Placeholder="Valor pesos"
+                >
+            </Entry>
+            <Button
+                Command="{Binding ConvertCommand}"
+                Text="Convertir"
+                BackgroundColor="Navy"
+                TextColor="White"
+                HeightRequest="40"
+                BorderRadius="20"
+                
+                ></Button>
+            <Label 
+                FontSize="Medium"
+                TextColor="Black"
+                Text="Dolares"
+                >
+            </Label>
+            <Entry
+                HorizontalTextAlignment="End"
+                Text="{Binding Dolares, Mode=TwoWay, StringFormat='${0:N2}'}"
+                TextColor="Black"
+                IsEnabled="False"
+                Placeholder="Valor Dolares"
+                >
+            </Entry>
+            <Label 
+                FontSize="Medium"
+                TextColor="Black"
+                Text="Euros"
+                >
+            </Label>
+            <Entry
+                HorizontalTextAlignment="End"
+                Text="{Binding Euros, Mode=TwoWay, StringFormat='${0:N2}'}"
+                TextColor="Black"
+                IsEnabled="False"
+                Placeholder="Valor Euros"
+                >
+            </Entry>
+            <Label 
+                FontSize="Medium"
+                TextColor="Black"
+                Text="Libras"
+                >
+            </Label>
+            <Entry
+                HorizontalTextAlignment="End"
+                Text="{Binding Libras, Mode=TwoWay , StringFormat='${0:N2}'}"
+                TextColor="Aqua"
+                IsEnabled="False"
+                Placeholder="Valor Libras"
+                >
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
